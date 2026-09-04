@@ -53,6 +53,6 @@ Manter meus currículos organizados, versionados e facilmente atualizáveis, per
 
 **Wesley Santos**
 
-Computer Engineer | Frontend & Full Stack Developer
+Computer Engineer | Full Stack Developer
 
 Foco no ecossistema JavaScript, com experiência em **React, Node.js, TypeScript e MongoDB**.

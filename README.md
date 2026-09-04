@@ -8,7 +8,7 @@ O repositório contém duas abordagens diferentes de currículo, cada uma dispon
 
 ### Harvard
 
-Currículo baseado no estilo tradicional de **Harvard**,  créditos do modelo Harvard ao [DEVCELIO](https://github.com/devcelio/resume-template/blob/main/resumes/pt-br/curriculo.tex]). Modelo do qual priorizando uma estrutura limpa, objetiva e profissional, com foco na apresentação clara da experiência, formação e habilidades.
+Currículo baseado no estilo tradicional de **Harvard**,  créditos do modelo Harvard ao [DEVCELIO](https://github.com/devcelio). Modelo do qual priorizando uma estrutura limpa, objetiva e profissional, com foco na apresentação clara da experiência, formação e habilidades.
 
 * 🇧🇷 **Português (PT-BR)**
 * 🇺🇸 **English (EN)**

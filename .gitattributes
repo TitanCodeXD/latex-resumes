@@ -1,0 +1,3 @@
+*.tex linguist-language=LaTeX
+*.cls linguist-language=LaTeX
+*.sty linguist-language=LaTeX

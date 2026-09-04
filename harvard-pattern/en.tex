@@ -1,0 +1,111 @@
+\documentclass[a4paper, 10pt]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,brazil]{babel}
+\usepackage{geometry}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{titlesec}
+\usepackage{textcomp}
+%\usepackage{enumitem}
+
+% --- CONFIGS ---
+\geometry{top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
+\pagestyle{empty}
+
+\hypersetup{
+    pdftitle={Resume - Wesley Roberto dos Santos},
+    pdfauthor={Wesley Roberto dos Santos},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black
+}
+
+\setcounter{secnumdepth}{0}
+
+% Section formatting
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}
+[\titlerule\vspace{0.5ex}]
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Huge \textbf{Wesley Roberto dos Santos}} \\
+    \vspace{0.3em}
+    \small{Junior Full-Stack Developer focused on JavaScript (Node.js and React), with practical experience in building web applications and API integration.}
+
+    \vspace{0.6em}
+    Curitiba, PR, Brazil \quad\textbullet\quad 
+    \href{mailto:wesleysantos32892653@outlook.com}{wesleysantos32892653@outlook.com} \quad\textbullet\quad
+    LinkedIn: \href{https://www.linkedin.com/in/wesley-santos-04aa50122}{linkedin.com/in/wesley-santos-04aa50122} \quad\textbullet\quad
+    GitHub: \href{https://github.com/TitanCodeXD}{github.com/TitanCodeXD} \quad\textbullet\quad
+    Portfolio: \href{https://portfolio-wesley-santos.netlify.app}{portfolio-wesley-santos.netlify.app}
+\end{center}
+
+% --- Projects ---
+\section{Projects}
+\textbf{Instagram-Style Full-Stack Web Application} \hfill 2024 \\
+GitHub Repository - \href{https://github.com/TitanCodeXD/Parallel}{https://github.com/TitanCodeXD/Parallel}
+\begin{itemize}
+    \item Developed a full-stack web application similar to Instagram using React.js, Node.js, MongoDB, and Redux.
+    \item Implemented features such as photo posting, comments, likes, file uploads (AWS S3), and authentication.
+\end{itemize}
+
+\medskip
+\textbf{Full-Stack Chat Application} \hfill 2024 \\
+GitHub Repository - \href{https://github.com/40nados/ProjectHub}{https://github.com/40nados/ProjectHub}
+\begin{itemize}
+    \item Built a real-time chat platform using Next.js, Node.js, Socket.IO, and MongoDB.
+    \item Added features such as file uploads (AWS S3), authentication, and private/group messaging.
+\end{itemize}
+
+\medskip
+\textbf{Gemini Chatbot} \hfill 2024 \\
+GitHub Repository - \href{https://github.com/TitanCodeXD/Chat-Bot}{https://github.com/TitanCodeXD/Chat-Bot}
+\begin{itemize}
+    \item Developed a chatbot using Google Gemini (Generative AI).
+    \item Implemented an interactive interface with Streamlit (Python), focused on usability and user experience.
+    \item Processed PDF, image, and audio files with information extraction and in-memory data manipulation (BytesIO).
+\end{itemize}
+
+% --- Skills ---
+\section{Skills and Certifications}
+\begin{itemize}
+    \item \textbf{Languages:} JavaScript, TypeScript, Python, C, R;
+    \item \textbf{Frontend:} React.js, Next.js, HTML, CSS, Tailwind CSS;
+    \item \textbf{Backend:} Node.js, NestJS, Express.js, MongoDB, SQL (SQLite, PostgreSQL), RESTful APIs, Prisma, JWT;
+    \item \textbf{Testing \& Documentation:} Jest, Swagger/OpenAPI;
+    \item \textbf{Tools:} Git, Bash Scripting, Docker, AWS S3, Redis, Firebase;
+    \item \textbf{Languages Spoken:} Portuguese (Native), English (Intermediate), Russian (Basic);
+    \item \textbf{Certifications:} MongoDB Associate Developer (Node.js) (2026), SCRUM Fundamentals Certified (2021);
+    \item \textbf{Courses:} FreeCodeCamp: JavaScript Algorithms and Data Structures (2021), Responsive Web Design (2021); Udemy: Node.js, Express, MongoDB, React.js and Hooks (2024).
+\end{itemize}
+
+% --- Education ---
+\section{Education}
+\textbf{Bachelor's Degree in Computer Engineering} \hfill Aug 2019 -- Dec 2024 \\
+Centro Universitário Tecnológico de Curitiba (UNIFATECPR), Curitiba, PR
+
+\medskip
+\textbf{Technical Course in CNC Programming and Lathe Operation} \hfill Jan 2018 -- Dec 2019 \\
+SENAI, Curitiba, PR
+
+% --- Experience ---
+\section{Professional Experience}
+\textbf{Mechanical Apprentice and CNC Programming Assistant} \hfill Mar 2019 -- Nov 2019 \\
+Trombini Embalagens SA, Curitiba, PR
+\begin{itemize}
+    \item Collaborated in machine maintenance processes, reducing total downtime by up to 15\%.
+    \item Assisted in CNC programming processes, increasing code efficiency by up to 10\%.
+\end{itemize}
+
+\end{document}

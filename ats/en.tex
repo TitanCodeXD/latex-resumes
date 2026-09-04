@@ -1,0 +1,192 @@
+\documentclass[11pt,a4paper]{article}
+
+% ============================================================
+% Resume - Wesley Roberto dos Santos
+% ATS-optimized: single column, no layout tables,
+% no graphics/icons, fully selectable text.
+% ============================================================
+
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=1.6cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+% ---------- Colors ----------
+\definecolor{headingblue}{RGB}{31,56,100}
+\definecolor{graytext}{RGB}{68,68,68}
+\definecolor{linkblue}{RGB}{17,85,204}
+
+% ---------- Font ----------
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ---------- Hyperlinks ----------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkblue,
+    linkcolor=linkblue,
+    pdftitle={Wesley Roberto dos Santos - Resume},
+    pdfauthor={Wesley Roberto dos Santos}
+}
+
+% ---------- Sections ----------
+\titleformat{\section}
+{\large\bfseries\color{headingblue}}
+{}{0em}{}
+[\vspace{-2pt}\titlerule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% ---------- Lists ----------
+\setlist[itemize]{leftmargin=1.1em,itemsep=1pt,topsep=2pt,parsep=0pt}
+
+% ---------- Helper Commands ----------
+\newcommand{\entryheader}[2]{%
+\noindent\textbf{#1}\hfill\textbf{#2}\par
+}
+
+\newcommand{\entrysub}[1]{%
+\noindent\textit{\color{graytext}#1}\par\vspace{2pt}
+}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+% ================= HEADER =================
+
+{\LARGE\bfseries\color{headingblue} Wesley Roberto dos Santos}\par
+\vspace{2pt}
+{\large\color{graytext} Junior Full Stack Developer \textbar\ Typescript \textbar\ Node.js \textbar\ NestJS \textbar\ React.js}\par
+\vspace{4pt}
+
+\noindent
+Curitiba, PR \textbar\
+(+55) 41 99870-3723 \textbar\
+\href{mailto:wesleysantos32892653@outlook.com}{wesleysantos32892653@outlook.com}
+\textbar\
+\href{https://linkedin.com/in/wesley-santos-04aa50122}{linkedin.com/in/wesley-santos-04aa50122}
+
+\noindent
+\href{https://github.com/TitanCodeXD}{github.com/TitanCodeXD}
+\textbar\
+\href{https://portfolio-wesley-santos.netlify.app}{portfolio-wesley-santos.netlify.app}
+
+% ================= PROFESSIONAL SUMMARY =================
+
+\section{Professional Summary}
+
+Junior Full Stack Developer with hands-on experience building web applications using JavaScript, TypeScript, React.js, Next.js, and Node.js. Experienced in developing RESTful APIs, integrating SQL and NoSQL databases (PostgreSQL and MongoDB), implementing user authentication, cloud file uploads with AWS S3, and version control using Git. MongoDB Associate Developer (Node.js) certified. Bachelor's degree in Computer Engineering with strong analytical skills and previous experience working in industrial environments focused on process optimization and continuous improvement.
+
+% ================= TECHNICAL SKILLS =================
+
+\section{Technical Skills}
+
+\textbf{Programming Languages:} JavaScript, TypeScript, Python, C, R
+
+\textbf{Front-end:} React.js, Next.js, Redux, HTML5, CSS3, Tailwind CSS
+
+\textbf{Back-end:} Node.js, NestJS, Express.js, NestJS, RESTful APIs, Prisma ORM, Socket.IO, JWT
+
+\textbf{Databases:} MongoDB, PostgreSQL, SQLite, SQL
+
+\textbf{Testing \& Documentation:} Jest, Swagger/OpenAPI
+
+\textbf{Tools \& Cloud:} Git, GitHub, Docker, AWS S3, Redis, Firebase, Bash, Agile Methodologies (Scrum)
+
+\textbf{Languages:} Portuguese (Native), English (Intermediate), Russian (Basic)
+
+% ================= PROFESSIONAL EXPERIENCE =================
+
+\section{Professional Experience}
+
+\entryheader{Mechanical Apprentice and CNC Programming Assistant}{Mar 2019 -- Nov 2019}
+
+\entrysub{Trombini Embalagens SA --- Curitiba, PR}
+
+\begin{itemize}
+
+\item Assisted in preventive and corrective maintenance of industrial machinery, helping reduce total downtime by up to 15\%.
+
+\item Supported CNC programming processes, improving machining code efficiency by up to 10\%.
+
+\end{itemize}
+
+% ================= PROJECTS =================
+
+\section{Projects}
+
+\entryheader{Instagram-like Full Stack Web Application}{2024}
+
+\entrysub{Repository: github.com/TitanCodeXD/Parallel}
+
+\begin{itemize}
+
+\item Developed a full stack social media application inspired by Instagram using React.js, Node.js, MongoDB, and Redux.
+
+\item Implemented photo uploads, comments, likes, user authentication, and AWS S3 cloud storage integration.
+
+\end{itemize}
+
+\entryheader{Real-Time Chat Platform}{2024}
+
+\entrysub{Repository: github.com/40nados/ProjectHub}
+
+\begin{itemize}
+
+\item Built a real-time chat platform using Next.js, Node.js, Socket.IO, and MongoDB.
+
+\item Implemented AWS S3 file uploads, authentication, private messaging, and group conversations.
+
+\end{itemize}
+
+\entryheader{Google Gemini AI Chatbot}{2024}
+
+\entrysub{Repository: github.com/TitanCodeXD/Chat-Bot}
+
+\begin{itemize}
+
+\item Developed an AI chatbot integrated with Google's Gemini API.
+
+\item Built an interactive user interface using Python and Streamlit.
+
+\item Implemented PDF, image, and audio processing with in-memory data handling using BytesIO.
+
+\end{itemize}
+
+% ================= EDUCATION =================
+
+\section{Education}
+
+\entryheader{Bachelor's Degree in Computer Engineering}{Aug 2019 -- Dec 2024}
+
+\entrysub{Centro Universitário Tecnológico de Curitiba (UNIFATECPR) --- Curitiba, Brazil}
+
+\entryheader{Technical Degree in CNC Programming and Lathe Operation}{Jan 2018 -- Dec 2019}
+
+\entrysub{SENAI --- Curitiba, Brazil}
+
+% ================= CERTIFICATIONS =================
+
+\section{Certifications}
+
+\begin{itemize}
+
+\item MongoDB Associate Developer (Node.js) --- 2026
+
+\item SCRUM Fundamentals Certified --- 2021
+
+\item freeCodeCamp: JavaScript Algorithms and Data Structures --- 2021
+
+\item freeCodeCamp: Responsive Web Design --- 2021
+
+\item Udemy: Node.js, Express, MongoDB, React and Hooks --- 2024
+
+\end{itemize}
+
+\end{document}

@@ -1,6 +1,10 @@
 # Currículos — LaTeX
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Language](https://shields.io/badge/Latex-green.svg)](https://www.latex-project.org)
 
 Repositório destinado ao armazenamento e versionamento dos meus currículos profissionais, desenvolvidos em **LaTeX**.
+
+Deixarei público meus próprios caso alguém queira usar para modificar seu próprio currículo de forma livre.
 
 O repositório contém duas abordagens diferentes de currículo, cada uma disponível em **português (PT-BR)** e **inglês (EN)**.
 

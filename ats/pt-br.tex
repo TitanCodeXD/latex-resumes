@@ -1,0 +1,146 @@
+% ============================================================
+% Curriculo - Wesley Roberto dos Santos
+% Modelo otimizado para ATS: coluna unica, sem tabelas de
+% layout, sem graficos/icones, texto sempre selecionavel.
+% ============================================================
+\documentclass[11pt,a4paper]{article}
+
+% cmap DEVE vir antes de fontenc/inputenc: corrige o mapeamento de
+% ligaduras (fi, fl, ffi...) no texto extraido do PDF, essencial para ATS.
+\usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage[margin=1.6cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+% ---------- Cores ----------
+\definecolor{headingblue}{RGB}{31,56,100}
+\definecolor{graytext}{RGB}{68,68,68}
+\definecolor{linkblue}{RGB}{17,85,204}
+
+% ---------- Fonte ----------
+% Usa a fonte padrao do LaTeX (Latin Modern / equivalente a Computer
+% Modern), que e sempre embutida como texto real -> 100% legivel por ATS.
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc} % Essencial para garantir a leitura correta de acentos pelo ATS
+
+% ---------- Hyperlinks ----------
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkblue,
+    linkcolor=linkblue,
+    pdftitle={Wesley Roberto dos Santos - Curriculo},
+    pdfauthor={Wesley Roberto dos Santos}
+}
+
+% ---------- Secoes ----------
+\titleformat{\section}
+  {\large\bfseries\color{headingblue}}
+  {}{0em}{}
+  [\vspace{-2pt}\titlerule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+% ---------- Listas (bullets nativos, nao caracteres soltos) ----------
+\setlist[itemize]{leftmargin=1.1em, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+% ---------- Comando auxiliar: cargo/instituicao + datas alinhadas ----------
+\newcommand{\entryheader}[2]{%
+  \noindent\textbf{#1}\hfill\textbf{#2}\par
+}
+\newcommand{\entrysub}[1]{%
+  \noindent\textit{\color{graytext}#1}\par\vspace{2pt}
+}
+
+\pagenumbering{gobble} % remove numero de pagina (nao atrapalha ATS, so estetico)
+
+\begin{document}
+
+% ================= CABECALHO =================
+{\LARGE\bfseries\color{headingblue} Wesley Roberto dos Santos}\par
+\vspace{2pt}
+{\large\color{graytext} Desenvolvedor Full Stack J\'unior \textbar\ JavaScript \textbar\ Node.js \textbar\ NestJS \textbar\ React.js}\par
+\vspace{4pt}
+\noindent
+Curitiba, PR \textbar\ 
+(41) 99870-3723 \textbar\ 
+\href{mailto:wesleysantos32892653@outlook.com}{wesleysantos32892653@outlook.com} \textbar\ 
+\href{https://linkedin.com/in/wesley-santos-04aa50122}{linkedin.com/in/wesley-santos-04aa50122}\par
+\noindent
+\href{https://github.com/TitanCodeXD}{github.com/TitanCodeXD} \textbar\ 
+\href{https://portfolio-wesley-santos.netlify.app}{portfolio-wesley-santos.netlify.app}
+
+% ================= RESUMO PROFISSIONAL =================
+\section{Resumo Profissional}
+Desenvolvedor Full Stack J\'unior com experi\^encia em projetos pr\'aticos na constru\c{c}\~ao de aplica\c{c}\~oes web utilizando JavaScript, TypeScript, React.js, Next.js e Node.js. Experi\^encia em desenvolvimento de APIs RESTful, integra\c{c}\~ao com bancos de dados SQL e NoSQL (PostgreSQL, MongoDB), autentica\c{c}\~ao de usu\'arios, upload de arquivos em nuvem (AWS S3) e versionamento de c\'odigo com Git. Certificado MongoDB Associate Developer (Node.js). Formado em Engenharia da Computa\c{c}\~ao, com forte capacidade anal\'itica e experi\^encia anterior em ambientes industriais orientados a processos e melhoria cont\'inua.
+
+% ================= HABILIDADES TECNICAS =================
+\section{Habilidades T\'ecnicas}
+\textbf{Linguagens de Programa\c{c}\~ao:} JavaScript, TypeScript, Python, C, R\par
+\textbf{Front-end:} React.js, Next.js, NestJS, Redux, HTML5, CSS3, Tailwind CSS\par
+\textbf{Back-end:} Node.js, Express.js, NestJS, API RESTful, Prisma ORM, Socket.IO, JWT\par
+\textbf{Banco de Dados:} MongoDB, SQL, SQLite, PostgreSQL\par
+\textbf{Testes e Documentação:} Jest, Swagger/OpenAPI\par
+\textbf{Ferramentas e Cloud:} Git, GitHub, Docker, AWS S3, Redis, Firebase, Bash Script, Metodologia \'Agil (Scrum)\par
+\textbf{Idiomas:} Portugu\^es (Nativo), Ingl\^es (Intermedi\'ario), Russo (B\'asico)
+
+% ================= EXPERIENCIA PROFISSIONAL =================
+\section{Experi\^encia Profissional}
+
+\entryheader{Aprendiz de Mec\^anica e Auxiliar de Programa\c{c}\~ao CNC}{Mar 2019 -- Nov 2019}
+\entrysub{Trombini Embalagens SA --- Curitiba, PR}
+\begin{itemize}
+  \item Colaborei na manuten\c{c}\~ao preventiva e corretiva de m\'aquinas industriais, reduzindo o tempo total de inatividade em at\'e 15\%.
+  \item Auxiliei nos processos de programa\c{c}\~ao CNC, aumentando a efetividade dos c\'odigos de usinagem em at\'e 10\%.
+\end{itemize}
+
+% ================= PROJETOS =================
+\section{Projetos de Desenvolvimento}
+
+\entryheader{Aplica\c{c}\~ao Full-Stack no Estilo Instagram}{2024}
+\entrysub{Reposit\'orio: github.com/TitanCodeXD/Parallel}
+\begin{itemize}
+  \item Desenvolvi uma aplica\c{c}\~ao web full-stack semelhante ao Instagram utilizando React.js, Node.js, MongoDB e Redux.
+  \item Implementei funcionalidades de postagem de fotos, coment\'arios, curtidas, upload de arquivos via AWS S3 e autentica\c{c}\~ao de usu\'arios.
+\end{itemize}
+
+\entryheader{Aplica\c{c}\~ao Full-Stack de Chat em Tempo Real}{2024}
+\entrysub{Reposit\'orio: github.com/40nados/ProjectHub}
+\begin{itemize}
+  \item Criei uma plataforma de chat em tempo real utilizando Next.js, Node.js, Socket.IO e MongoDB.
+  \item Implementei upload de arquivos (AWS S3), autentica\c{c}\~ao de usu\'arios e mensagens privadas e em grupo.
+\end{itemize}
+
+\entryheader{ChatBot com Google Gemini (IA Generativa)}{2024}
+\entrysub{Reposit\'orio: github.com/TitanCodeXD/Chat-Bot}
+\begin{itemize}
+  \item Desenvolvi um chatbot integrado \`a API do Google Gemini para gera\c{c}\~ao de respostas por intelig\^encia artificial.
+  \item Implementei interface interativa com Python e Streamlit, com foco em usabilidade e experi\^encia do usu\'ario.
+  \item Implementei processamento de arquivos PDF, imagem e \'audio, com extra\c{c}\~ao de informa\c{c}\~oes e manipula\c{c}\~ao de dados em mem\'oria (BytesIO).
+\end{itemize}
+
+% ================= FORMACAO ACADEMICA =================
+\section{Forma\c{c}\~ao Acad\^emica}
+
+\entryheader{Bacharelado em Engenharia da Computa\c{c}\~ao}{Ago 2019 -- Dez 2024}
+\entrysub{Centro Universit\'ario Tecnol\'ogico de Curitiba (UNIFATECPR) --- Curitiba, PR}
+
+\entryheader{Curso T\'ecnico em Programa\c{c}\~ao CNC e Opera\c{c}\~ao de Torno}{Jan 2018 -- Dez 2019}
+\entrysub{SENAI --- Curitiba, PR}
+
+% ================= CERTIFICACOES E CURSOS =================
+\section{Certifica\c{c}\~oes e Cursos}
+\begin{itemize}
+  \item MongoDB Associate Developer (Node.js) --- 2026
+  \item SCRUM Fundamentals Certified --- 2021
+  \item FreeCodeCamp: JavaScript Algorithms and Data Structures --- 2021
+  \item FreeCodeCamp: Responsive Web Design --- 2021
+  \item Udemy: Node.js, Express, MongoDB, React e Hooks --- 2024
+\end{itemize}
+
+\end{document}
